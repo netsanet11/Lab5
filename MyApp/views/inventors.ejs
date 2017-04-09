@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>List of <%= title %></p> 
+   <table><tr><td>First Name</td><td>Last Name</td><td>Year</td></tr>
+    <% for(var invent of inventors) {%>
+   <tr>
+     <td>
+       <%= invent.first%>
+     </td>
+       <td>
+       <%= invent.last%>
+     </td>
+       <td>
+       <%= invent.year%>
+     </td>
+   </tr>
+    <% } %>
+   </table>
+  </body>
+</html>
+
